@@ -3,3 +3,9 @@ node_js:
   - "6.9.5"
 notifications:
   email: false
+  webhooks: https://ambrosio-tele.herokuapp.com/sacarinobot/travisci/133188453
+  on_success: always # default: always
+  on_failure: always # default: always
+  on_start: always   # default: never
+before_script:
+  - npm install -g grunt-cli
