@@ -1,25 +1,25 @@
 {
   "name": "hubot-wow-token",
   "description": "Get the wow token prices",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "hashashin <gentoo.power@gmail.com>",
   "license": "MIT",
-
-  "keywords": ["hubot","hubot-scripts","wow token","wow"],
-
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "wow token",
+    "wow"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/hashashin/hubot-wow-token.git"
   },
-
   "bugs": {
     "url": "https://github.com/hashashin/hubot-wow-token/issues"
   },
-
   "dependencies": {
     "coffee-script": "~1.12"
   },
-
   "devDependencies": {
     "mocha": "*",
     "chai": "*",
@@ -30,9 +30,7 @@
     "matchdep": "~1.0.1",
     "grunt-contrib-watch": "~1.0.0"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
