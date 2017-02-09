@@ -1,0 +1,24 @@
+# hubot-wow-token
+
+Get the wow token prices
+
+See [`src/wow-token.coffee`](src/wow-token.coffee) for full documentation.
+
+## Installation
+
+In hubot project repo, run:
+
+`npm install hubot-wow-token --save`
+
+Then add **hubot-wow-token** to your `external-scripts.json`:
+
+```json
+["hubot-wow-token"]
+```
+
+## Sample Interaction
+
+```
+user1>> wowtoken EU
+hubot>> wow token price in EU: 100,000g
+```
