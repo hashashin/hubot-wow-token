@@ -13,16 +13,4 @@ describe 'wow-token', ->
     require('../src/wow-token')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken EU/)
-
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken NA/)
-
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken CN/)
-
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken KR/)
-
-  it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken TW/)
+    expect(@robot.respond).to.have.been.calledWith(/wowtoken (EU|NA|CN|TW|KR)$/i)
