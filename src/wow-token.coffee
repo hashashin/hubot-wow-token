@@ -22,15 +22,15 @@ module.exports = (robot) ->
           when 200
             text = "wow token prize in #{msg.match[1]}: " 
             switch msg.match[1]
-              when EU
+              when "EU"
                 msg.send "#{text}#{json.update.EU.formatted.buy}"
-              when NA
+              when "NA"
                 msg.send "#{text}#{json.update.NA.formatted.buy}"
-              when TW
+              when "TW"
                 msg.send "#{text}#{json.update.TW.formatted.buy}"
-              when CN
+              when "CN"
                 msg.send "#{text}#{json.update.CN.formatted.buy}"
-              when KR
+              when "KR"
                 msg.send "#{text}#{json.update.KR.formatted.buy}"
           else
             msg.send "There was an error (status: #{res.statusCode})."
