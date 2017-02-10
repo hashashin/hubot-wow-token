@@ -1,5 +1,5 @@
 # Description:
-#   Return EU wow token price
+#   Return wow token price by region
 #
 # Dependencies:
 #   None
