@@ -14,7 +14,7 @@
 #   hashashin
      
 module.exports = (robot) ->
-  robot.respond /wowtoken (EU|NA|CN|TW|KR)$/i, (msg) ->
+  robot.respond /wowtoken (EU|NA|CN|TW|KR|eu|na|cn|tw|kr)$/i, (msg) ->
     msg.http("https://wowtoken.info/wowtoken.json")
       .get() (err, res, body) ->
         json = JSON.parse(body)
@@ -22,15 +22,15 @@ module.exports = (robot) ->
           when 200
             text = "wow token prize in #{msg.match[1]}: " 
             switch msg.match[1]
-              when "EU"
+              when "EU", "eu"
                 msg.send "#{text}#{json.update.EU.formatted.buy}"
-              when "NA"
+              when "NA", "na"
                 msg.send "#{text}#{json.update.NA.formatted.buy}"
-              when "TW"
+              when "TW", "tw"
                 msg.send "#{text}#{json.update.TW.formatted.buy}"
-              when "CN"
+              when "CN", "cn"
                 msg.send "#{text}#{json.update.CN.formatted.buy}"
-              when "KR"
+              when "KR", "kr"
                 msg.send "#{text}#{json.update.KR.formatted.buy}"
           else
             msg.send "There was an error (status: #{res.statusCode})."

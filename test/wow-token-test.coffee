@@ -13,4 +13,4 @@ describe 'wow-token', ->
     require('../src/wow-token')(@robot)
 
   it 'registers a respond listener', ->
-    expect(@robot.respond).to.have.been.calledWith(/wowtoken (EU|NA|CN|TW|KR)$/i)
+    expect(@robot.respond).to.have.been.calledWith(/wowtoken (EU|NA|CN|TW|KR|eu|na|cn|tw|kr)$/i)
