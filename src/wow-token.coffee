@@ -15,7 +15,7 @@
      
 module.exports = (robot) ->
   robot.respond /wowtoken (EU|NA|CN|TW|KR|eu|na|cn|tw|kr)$/i, (msg) ->
-    msg.http("https://data.wowtoken.info/snapshot.json")
+    msg.http("https://data.wowtoken.info/wowtoken.json")
       .get() (err, res, body) ->
         json = JSON.parse(body)
         switch res.statusCode                                
