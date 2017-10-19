@@ -1,7 +1,7 @@
 {
   "name": "hubot-wow-token",
   "description": "Get the wow token prices",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "hashashin <gentoo.power@gmail.com>",
   "license": "MIT",
   "keywords": [
